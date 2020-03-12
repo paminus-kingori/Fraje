@@ -1,0 +1,232 @@
+body{
+    max-width: 100% !important;
+}
+#welcome{
+    font-size: 70px;
+    text-align: center;
+    padding:0;
+    margin-bottom: auto;
+}
+#briefing{
+    padding:0;
+    font-size: 24px;
+    text-align: center;
+
+}
+body{
+background-color:#9c9c9cd9;
+margin-left: 0px;
+margin-left: 0px;
+
+}
+header{
+  
+    padding-top: 0;
+    height: 350px;
+    position: relative;
+    
+    background-image: url(VW.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#link_full{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* display: flex; */
+    /* align-items: center; */
+}
+#links
+{
+    text-align: right;
+    margin-right:30px;
+    word-spacing: 10px;
+    text-decoration: none;
+    font-size: large;
+    float: right;
+    margin-left: auto;
+    
+}
+
+#name{
+    text-align: center;
+    color:goldenrod;
+    font-weight: 500;
+    font-size: 120px;
+    padding-left: 20px;
+    font-weight: 500px;
+}
+#name_about{
+    text-align: center;
+    color:goldenrod;
+    font-weight: 500;
+    font-size: 135px;
+    padding-left: 20px;
+    font-weight: 500;
+    /* vertical-align: middle;  */
+}
+/* 
+#link-full
+{
+    text-decoration: solid;
+    font-size: x-large;
+} */
+#mzee{
+    margin-top: 90px;
+    margin-left: inherit;
+    margin-right: inherit;
+    font-size:40px ;
+    text-align: center;
+    margin-bottom: 4px;
+    background: linear-gradient(rgb(234, 104, 169),#e26caec4,#e077b163);
+    
+    
+}
+button{
+    background-color:rgb(49, 11, 155);
+    border: none;
+    color: rgb(233, 233, 19);
+    padding: 15px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 6px;
+    -webkit-transition-duration: 0.4s;
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.697);
+    /* box-shadow: 0 8px 16px 0 rgba(red, green, blue, alpha),0 6px 20px 0 rgba(red, green, blue, alpha); 
+    Why is this property not working?
+    */
+    /* opacity: 0.6; */
+   
+}
+button:hover
+{
+
+    background-color:rgb(37, 158, 233);
+    color: whitesmoke;
+    
+}
+/* footer{
+    background-image: url(rangeH.jpg);
+    width:100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+#exeCars{
+    margin-top: auto;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width:100% !important;
+    text-align: center;
+
+}
+h1{
+    padding-left: 5%;
+    text-align: center;
+}
+/* .bmw{
+    border: 3px;
+    border-color: red;
+} */
+
+.bmw:hover{
+ /* -webkit-transition-duration: 0.2s; */
+    transition-delay: 0s;
+    
+    
+
+}
+/* .range:hover{
+    opacity: 0.5;
+    transition-delay: 0s;
+    /* -webkit-transition-duration: 0.2s; */
+ 
+
+.car{
+    position: relative;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-bottom: 19px;
+    /* box-shadow: grey; */
+    /* animation: zm 3s linear infinite; - how we call animations */
+}
+
+
+.car img{
+    z-index: 0;
+    box-shadow: 0 3px 6px 0 rgba(15, 14, 14, 0.787);
+    border-radius: 10px;
+}
+
+.car .img_link{
+   display: none;
+   z-index: 4;
+   color: #fff;
+   text-decoration: none;
+   font-size: 23px;
+}
+
+.car .verlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    /**/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .6s all;
+
+}
+
+.car:hover .verlay{
+    background-color: rgba(0,0,0,.8);
+    transition: .6s all;
+}
+
+.car:hover .img_link{
+    display: inline-block;
+    font-size: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: goldenrod;
+}   
+/* }
+.iverlay:hover{
+    background-color: rgba(0, 0, 0, 0.697);
+    transition: .6s all;
+    z-index: 4;
+} */
+.iverlay{
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(0,0,0,.5);
+}
+/** when you want to create a translucent background, 
+you set position of the item in the background to relative, then the overlay to absolute*/
+
+@keyframes zm{
+    0%{
+        background:rgba(0, 0, 0, 0.697);
+    }
+
+    50%{
+        background: transparent;
+    }
+
+    100%{
+        background-image: rgba(0,0,0,0.68);
+    }
+}
